@@ -1,0 +1,13 @@
+{
+  "name": "codewars_solutions_js",
+  "version": "1.0.0",
+  "description": "Code resolutions using JS for challenges in https://www.codewars.com/",
+  "type": "module",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^5.0.0",
+    "mocha": "^10.2.0"
+  }  
+}

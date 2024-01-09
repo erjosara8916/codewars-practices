@@ -5,10 +5,10 @@
  * @param {*} number 
  * @returns 
  */
-const countBits = function (number) {
+export function countBits (number) {
   const isNegativeNumber = number < 0;
   
-  if (isNegativeNumber) return result
+  if (isNegativeNumber) return 0
 
   const binary = number.toString(2)
   const bitsFound = (binary.match(/1/g) || []).length;
