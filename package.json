@@ -1,7 +1,7 @@
 {
   "name": "codewars_solutions_js",
   "version": "1.0.0",
-  "description": "Code resolutions using JS for challenges in https://www.codewars.com/",
+  "description": "Code resolutions using Node JS for challenges in https://www.codewars.com/",
   "type": "module",
   "scripts": {
     "test": "mocha"
