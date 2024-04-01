@@ -12,9 +12,6 @@ Note: If the number is a multiple of both 3 and 5, only count it once.
 
 ```js
 export function solution(number){
-  const isNegativeNumber = number < 0;
-  const multiples = [3,5]
-  
   let sum = 0
   
   for (let i = 0; i < number; i++) {
@@ -25,5 +22,18 @@ export function solution(number){
   }
   
   return sum
+}
+```
+
+## Solution 2
+
+```js
+function solution(number){
+  if (number < 1) return 0
+  
+  const arrayNumbers = [...new Array(number).keys()]
+  const multiplesOf3or5 = arrayNumbers.filter(n => n % 3 == 0 || n % 5 == 0)
+  const sumOfMultiples = multiplesOf3or5.reduce((a, b) => a + b)
+  return sumOfMultiples;
 }
 ```

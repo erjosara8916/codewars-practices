@@ -1,13 +1,8 @@
 export function solution(number){
+  if (number < 1) return 0
   
-  let sum = 0
-  
-  for (let i = 0; i < number; i++) {
-    const isMultipleOf3 = i % 3 == 0
-    const isMultipleOf5 = i % 5 == 0
-    
-    if (isMultipleOf3 || isMultipleOf5) sum += i
-  }
-  
-  return sum
+  const arrayNumbers = [...new Array(number).keys()]
+  const multiplesOf3or5 = arrayNumbers.filter(n => n % 3 == 0 || n % 5 == 0)
+  const sumOfMultiples = multiplesOf3or5.reduce((a, b) => a + b)
+  return sumOfMultiples;
 }
