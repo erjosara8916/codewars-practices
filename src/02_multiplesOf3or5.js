@@ -1,6 +1,4 @@
 export function solution(number){
-  const isNegativeNumber = number < 0;
-  const multiples = [3,5]
   
   let sum = 0
   
